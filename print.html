@@ -126,12 +126,15 @@
             .qr-link {
                 display: block !important;
                 position: absolute;
-                top: calc(0.5in + 1.2in + 0.1in); 
-                right: 0.5in;
+                /* Horizontally: right position is QR code's left edge (1.7in) + a small gap (0.1in) = 1.8in */
+                right: 1.8in; 
+                /* Vertically: Centers the link with the 1.2in QR code */
+                top: 1.0in; 
                 font-size: 8pt;
                 color: black;
                 text-align: right;
-                width: 1.2in;
+                width: 1.5in; 
+                line-height: 1;
             }
         }
     </style>
