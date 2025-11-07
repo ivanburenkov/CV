@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>CV: Ivan Burenkov (Print Friendly)</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        /* Base styles for web view (minimal) */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            padding-top: 5px; /* Reduced padding */
+        }
+        .cv-container {
+            max-width: 900px;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            background-color: white;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+            border-radius: 0.5rem;
+            padding: 1.5rem; /* Reduced padding */
+        }
+        .section-heading {
+            border-bottom: 2px solid #0d6efd; 
+            padding-bottom: 0.3rem;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        .entry-title {
+            font-weight: 600;
+            color: #0d6efd;
+            font-size: 1rem;
+        }
+        .text-secondary {
+            font-size: 0.9rem;
+        }
+        .small {
+            font-size: 0.8rem !important;
+        }
+        
+        /* PRINT STYLES - Critical for one-page fit */
+        @media print {
+            body {
+                background-color: white !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                color: black !important;
+                padding-top: 0 !important;
+            }
+            .cv-container {
+                max-width: 100% !important;
+                margin: 0 !important;
+                box-shadow: none !important;
+                border-radius: 0 !important;
+                padding: 0.5in !important; /* Standard print margin */
+            }
+            /* Hide non-essential elements for print */
+            .navbar, hr, .ms-2.small.text-primary.text-decoration-none, 
+            .bi-info-circle, .bi-link-45deg, .bi-journal-check, 
+            .bi-globe, .bi-envelope, .d-flex.flex-column.flex-md-row,
+            .text-success, /* Hides the green success icon */
+            .bi-star-fill, .bi-trophy-fill, .bi-broadcast-pin, .bi-eye, .bi-thermometer-half, .bi-heart-pulse-fill, .bi-lock-fill, .bi-journal-richtext, .bi-award-fill 
+             {
+                display: none !important;
+            }
+            /* Force all collapse sections to be visible for a complete CV */
+            .collapse:not(.show) {
+                display: block !important;
+                height: auto !important;
+                visibility: visible !important;
+            }
+            .section-heading {
+                border-bottom: 1px solid black !important;
+                color: black !important;
+                padding-bottom: 0.1rem;
+                margin-bottom: 0.3rem;
+                font-size: 1.1rem;
+            }
+            .entry-title {
+                color: black !important;
+                font-size: 0.9rem !important;
+                font-weight: 700 !important;
+                margin-bottom: 0 !important;
+            }
+            .text-secondary {
+                font-size: 0.8rem !important;
+                margin-top: 0 !important;
+                margin-bottom: 0.1rem !important;
+            }
+            .row.g-0.mb-3 {
+                margin-bottom: 0.3rem !important;
+            }
+            .border-start {
+                border-left: none !important;
+            }
+            .list-unstyled li {
+                margin-bottom: 0.1rem !important;
+            }
+            .small {
+                font-size: 0.75rem !important;
+            }
+            .patent-title {
+                display: inline;
+                margin-left: 0.5rem;
+                font-style: normal;
+            }
+            .patent-number {
+                font-weight: normal;
+                text-decoration: none;
+                color: black;
+            }
+            .patent-number:after {
+                content: ""; /* remove link text */
+            }
+            .text-muted {
+                color: #555 !important;
+            }
+            .qr-code {
+                display: block !important;
+                position: absolute;
+                top: 0.5in;
+                right: 0.5in;
+                width: 1.2in;
+                height: 1.2in;
+            }
+            
+            /* Print the full link next to the QR code */
+            .qr-link {
+                display: block !important;
+                position: absolute;
+                top: calc(0.5in + 1.2in + 0.1in); /* Below QR code */
+                right: 0.5in;
+                font-size: 8pt;
+                color: black;
+                text-align: right;
+                width: 1.2in;
+            }
+            
+            /* Adjust header for QR code space */
+            .cv-header {
+                padding-right: 1.5in; 
+                text-align: left !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container cv-container">
+
+        <header id="top" class="mb-3 cv-header">
+            <h1 class="display-6 fw-bold text-primary mb-1">Ivan Burenkov, PhD</h1>
+            <p class="lead mb-0 small">Assistant Research Scientist, Joint Quantum Institute (UMD/NIST)</p>
+            <div class="mt-1 small">
+                <span class="d-block"><i class="bi bi-envelope"></i> Email: ivan.burenkov@gmail.com</span>
+                <span class="d-block">Work: (301) 975-8112 | Mobile: (240) 474-1589</span>
+            </div>
+            
+            <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.iburenkov.com/CV/" alt="QR Code to Full CV" style="display: none;">
+            <span class="qr-link" style="display: none;">Full CV: iburenkov.com/CV/</span>
+        </header>
+
+        <hr class="mb-3">
+
+        <section id="education" class="mb-3">
+            <h2 class="section-heading">Education</h2>
+            
+            <div class="row g-0 mb-1">
+                <div class="col-12 col-md-3 text-md-end text-muted pe-md-3 small">2009 - 2012</div>
+                <div class="col-12 col-md-9 border-start border-primary ps-md-3">
+                    <p class="mb-0 entry-title">PhD, Department of Physics</p>
+                    <p class="text-secondary mb-0">Lomonosov Moscow State University</p>
+                    <div class="collapse show" id="phd-details">
+                        <p class="small text-muted mb-0">Thesis: “Role of coherence in electron and atomic interactions with strong classical and non-classical light fields”</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-0">
+                <div class="col-12 col-md-3 text-md-end text-muted pe-md-3 small">2003 - 2009</div>
+                <div class="col-12 col-md-9 border-start border-primary ps-md-3">
+                    <p class="mb-0 entry-title">B.Sc. + M.Sc. (equivalent)</p>
+                    <p class="text-secondary mb-0">Lomonosov Moscow State University, Department of Physics</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="mb-3">
+            <h2 class="section-heading">Experience</h2>
+            
+            <div class="row g-0 mb-1">
+                <div class="col-12 col-md-3 text-md-end fw-bold pe-md-3 small">2018 – present</div>
+                <div class="col-12 col-md-9 border-start border-primary ps-md-3">
+                    <p class="mb-0 entry-title">Assistant Research Scientist</p>
+                    <p class="text-secondary mb-0">Joint Quantum Institute, University of Maryland and NIST, MD, USA</p>
+                    
+                    <div class="collapse show" id="job-details-2018">
+                        <h5 class="small text-muted fw-bold mt-1 mb-0">Research Directions:</h5>
+                        <ul class="list-unstyled small text-muted mb-0 ms-3">
+                            <li>Experimental quantum optics, Numerical simulations, Quantum metrology and sensing.</li>
+                            <li>Quantum Biophotonics, Quantum Networks and Coexistence, Group supervision.</li>
+                        </ul>
+                        <h5 class="small text-muted fw-bold mt-1 mb-0">Key Achievements:</h5>
+                        <ul class="list-unstyled small text-muted mb-0 ms-3">
+                            <li>Demonstrated **picosecond-level synchronization** of lasers over 120 km of fiber (WR-PTP).</li>
+                            <li>Achieved **entanglement distribution** over 100 km fiber while **coexisting with classical signals**.</li>
+                            <li>Invented new **super-resolution technique** (S-RIPE) and quantum-enhanced flow cytometer (**single-biomarker sensitivity**).</li>
+                            <li>Invented and prototyped **Quantum receiver for coherent frequency shift keying** operating **beyond classical limits**.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-0 mb-1">
+                <div class="col-12 col-md-3 text-md-end text-muted pe-md-3 small">2015 – 2018</div>
+                <div class="col-12 col-md-9 border-start border-primary ps-md-3">
+                    <p class="mb-0 entry-title">Post-Doctoral Associate</p>
+                    <p class="text-secondary mb-0">Joint Quantum Institute, University of Maryland and NIST, MD, USA</p>
+                    <div class="collapse show" id="job-details-2015">
+                        <ul class="list-unstyled small text-muted mb-0 ms-3">
+                            <li>Built a **record-low noise quantum frequency transducer**.</li>
+                            <li>Developed algorithm for **full statistical mode reconstruction** of a light field.</li>
+                            <li>Built a **quantum-enhanced working prototype of a flow cytometer**.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-0 mb-1">
+                <div class="col-12 col-md-3 text-md-end text-muted pe-md-3 small">2014 – 2015</div>
+                <div class="col-12 col-md-9 border-start border-primary ps-md-3">
+                    <p class="mb-0 entry-title">Senior Scientist</p>
+                    <p class="text-secondary mb-0">Lomonosov Moscow State University, Russia</p>
+                </div>
+            </div>
+
+            <div class="row g-0">
+                <div class="col-12 col-md-3 text-md-end text-muted pe-md-3 small">2006 – 2008</div>
+                <div class="col-12 col-md-9 border-start border-primary ps-md-3">
+                    <p class="mb-0 entry-title">Software Developer Junior (Contract)</p>
+                    <p class="text-secondary mb-0">Intel Corp., Moscow, Russia</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="mb-3">
+
+        <section id="achievements" class="mb-3">
+            <h2 class="section-heading">Achievements & Awards</h2>
+            <ul class="list-unstyled small">
+                <li class="mb-1">
+                    <span class="fw-bold">NIH Quantum Sensing Technology Challenge, Stage 1 Winner</span> (2025).
+                </li>
+                <li class="mb-1">
+                    <span class="fw-bold">Record Improvement in Error Correction</span> efficiency (40 dB below the classical limit).
+                </li>
+                <li class="mb-1">
+                    <span class="fw-bold">Metropolitan Synchronization:</span> Picosecond-level synchronization of lasers over 120 km of deployed fiber.
+                </li>
+                <li class="mb-1">
+                    <span class="fw-bold">Novel Super-Resolution Imaging:</span> Invented and demonstrated S-RIPE technique.
+                </li>
+                <li class="mb-1">
+                    <span class="fw-bold">Single-Biomarker Sensitivity</span> demonstrated in the quantum-enhanced flow cytometer.
+                </li>
+            </ul>
+        </section>
+
+        <section id="inventions" class="mb-3">
+            <h2 class="section-heading">Patents & Inventions</h2>
+            <ul class="list-unstyled small">
+                <li class="mb-1">
+                    <span class="patent-number fw-bold">US Patent 12,387,129</span> (2025). <span class="patent-title">Systems and methods for quantum-enabled error correction.</span>
+                </li>
+                <li class="mb-1">
+                    <span class="patent-number fw-bold">US Patent 11,940,714</span> (2024). <span class="patent-title">Ultra-low-noise, on-chip quantum devices.</span>
+                </li>
+                <li class="mb-1">
+                    <span class="patent-number fw-bold">US Patent 11,768,147</span> (2023). <span class="patent-title">Quantum flow cytometer.</span>
+                </li>
+                <li class="mb-1">
+                    <span class="patent-number fw-bold">US Patent 10,382,141</span> (2019). <span class="patent-title">Communication linker for communication linking.</span>
+                </li>
+                <li class="mb-1">
+                    <span class="patent-number fw-bold">US Patent App. 2025/0225615</span> (2025). <span class="patent-title">Super-resolution imaging via photon enumeration.</span>
+                </li>
+            </ul>
+        </section>
+
+        <section id="publications" class="mb-3">
+            <h2 class="section-heading">Selected Publications</h2>
+            <ul class="list-unstyled small">
+                <li class="mb-1">
+                    A Rahmouni, PS Kuo, YS Li-Baboud, IA Burenkov, ... <a href="https://doi.org/10.1364/JOCN.518226" target="_blank">"100-km entanglement distribution with coexisting quantum and classical signals in a single fiber"</a>. <i>Journal of Optical Communications and Networking</i> <span class="fw-bold">16</span> (8), 781-787. <span class="fw-bold">(2024)</span>
+                </li>
+                <li class="mb-1">
+                    IA Burenkov, A Semionov, G Hala, T Gerrits, ... <a href="https://doi.org/10.1364/OE.480486" target="_blank">"Synchronization and coexistence in quantum networks"</a>. <i>Optics Express</i> <span class="fw-bold">31</span> (7), 11431-11446. <span class="fw-bold">(2023)</span>
+                </li>
+                <li class="mb-1">
+                    IA Burenkov, MV Jabir, SV Polyakov. <a href="https://doi.org/10.1116/5.0036959" target="_blank">"Practical quantum-enhanced receivers for classical communication"</a>. <i>AVS quantum science</i> <span class="fw-bold">3</span> (2), 025301. <span class="fw-bold">(2021)</span>
+                </li>
+                <li class="mb-1">
+                    IA Burenkov, MV Jabir, A Battou, SV Polyakov. <a href="https://doi.org/10.1103/PRXQuantum.1.010308" target="_blank">"Time-resolving quantum measurement enables energy-efficient, large-alphabet communication"</a>. <i>PRX Quantum</i> <span class="fw-bold">1</span> (1), 010308. <span class="fw-bold">(2020)</span>
+                </li>
+                <li class="mb-1">
+                    IA Burenkov, OV Tikhonova, SV Polyakov. <a href="https://doi.org/10.1364/OPTICA.5.000227" target="_blank">"Quantum receiver for large alphabet communication"</a>. <i>Optica</i> <span class="fw-bold">5</span> (3), 227-232. <span class="fw-bold">(2018)</span>
+                </li>
+                <li class="mb-1">
+                    IA Burenkov, AK Sharma, T Gerrits, ... <a href="https://doi.org/10.1103/PhysRevA.95.053806" target="_blank">"Full statistical mode reconstruction of a light field via a photon-number-resolved measurement"</a>. <i>Physical Review A</i> <span class="fw-bold">95</span> (5), 053806. <span class="fw-bold">(2017)</span>
+                </li>
+            </ul>
+        </section>
+
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
