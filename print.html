@@ -52,7 +52,6 @@
                 print-color-adjust: exact;
                 color: black !important;
                 padding-top: 0 !important;
-                /* Use A4 size for better fit, compatible with Letter */
                 size: A4 portrait; 
             }
             .cv-container {
@@ -113,7 +112,6 @@
             .cv-header {
                 padding-right: 1.5in; 
                 text-align: left !important;
-                /* Ensure header is full width, outside of columns */
                 -webkit-column-span: all;
                 column-span: all;
             }
@@ -164,9 +162,6 @@
                     <div class="col-12 col-md-9 border-start border-primary ps-md-3">
                         <p class="mb-0 entry-title">PhD, Department of Physics</p>
                         <p class="text-secondary mb-0">Lomonosov Moscow State University</p>
-                        <div class="collapse show" id="phd-details">
-                            <p class="small text-muted mb-0">Thesis: “Role of coherence in electron and atomic interactions with strong classical and non-classical light fields”</p>
-                        </div>
                     </div>
                 </div>
                 
@@ -187,21 +182,6 @@
                     <div class="col-12 col-md-9 border-start border-primary ps-md-3">
                         <p class="mb-0 entry-title">Assistant Research Scientist</p>
                         <p class="text-secondary mb-0">Joint Quantum Institute, University of Maryland and NIST, MD, USA</p>
-                        
-                        <div class="collapse show" id="job-details-2018">
-                            <h5 class="small text-muted fw-bold mt-1 mb-0">Research Directions:</h5>
-                            <ul class="list-unstyled small text-muted mb-0 ms-3">
-                                <li>Experimental quantum optics, Numerical simulations, Quantum metrology and sensing.</li>
-                                <li>Quantum Biophotonics, Quantum Networks and Coexistence, Group supervision.</li>
-                            </ul>
-                            <h5 class="small text-muted fw-bold mt-1 mb-0">Key Achievements:</h5>
-                            <ul class="list-unstyled small text-muted mb-0 ms-3">
-                                <li>Demonstrated **picosecond-level synchronization** of lasers over 120 km of fiber (WR-PTP).</li>
-                                <li>Achieved **entanglement distribution** over 100 km fiber while **coexisting with classical signals**.</li>
-                                <li>Invented new **super-resolution technique** (S-RIPE) and quantum-enhanced flow cytometer (**single-biomarker sensitivity**).</li>
-                                <li>Invented and prototyped **Quantum receiver for coherent frequency shift keying** operating **beyond classical limits**.</li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
 
@@ -210,13 +190,6 @@
                     <div class="col-12 col-md-9 border-start border-primary ps-md-3">
                         <p class="mb-0 entry-title">Post-Doctoral Associate</p>
                         <p class="text-secondary mb-0">Joint Quantum Institute, University of Maryland and NIST, MD, USA</p>
-                        <div class="collapse show" id="job-details-2015">
-                            <ul class="list-unstyled small text-muted mb-0 ms-3">
-                                <li>Built a **record-low noise quantum frequency transducer**.</li>
-                                <li>Developed algorithm for **full statistical mode reconstruction** of a light field.</li>
-                                <li>Built a **quantum-enhanced working prototype of a flow cytometer**.</li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
                 
@@ -225,14 +198,6 @@
                     <div class="col-12 col-md-9 border-start border-primary ps-md-3">
                         <p class="mb-0 entry-title">Senior Scientist</p>
                         <p class="text-secondary mb-0">Lomonosov Moscow State University, Russia</p>
-                    </div>
-                </div>
-
-                <div class="row g-0">
-                    <div class="col-12 col-md-3 text-md-end text-muted pe-md-3 small">2006 – 2008</div>
-                    <div class="col-12 col-md-9 border-start border-primary ps-md-3">
-                        <p class="mb-0 entry-title">Software Developer Junior (Contract)</p>
-                        <p class="text-secondary mb-0">Intel Corp., Moscow, Russia</p>
                     </div>
                 </div>
             </section>
@@ -306,5 +271,12 @@
         </div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+    <script>
+        // Trigger the print dialog once the document is fully loaded
+        window.onload = function() {
+            window.print();
+        }
+    </script>
 </body>
 </html>
